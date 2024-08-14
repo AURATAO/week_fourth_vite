@@ -1,0 +1,48 @@
+@import './reset.scss';
+@import './layout/header.scss';
+@import './layout/footer.scss';
+
+@import './pages/products.scss';
+@import './pages/location.scss';
+@import './pages/index.scss';
+
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+      
+}
+
+a,ul,li{
+    display: block;
+    text-decoration: none;
+    color:black;
+}
+
+
+
+body{
+    font-family: "Roboto", "Noto Sans TC", sans-serif;
+    line-height: 1.5;
+    height: 100%;
+}
+
+.container{
+    max-width: 1296px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.displayFlex{
+    display: flex;
+}
+
+:root{
+    --main-beige:#FBF2F2;
+    --main-red:#AA0601;
+    --main-darkred:#650300;
+}

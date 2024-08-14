@@ -1,0 +1,276 @@
+.product_container{
+    width: 100%;
+    margin: 0 auto;
+}
+
+/*category*/
+
+.product_category{
+    width: 100%;
+    padding-top: 60px;
+}
+
+.product_category {
+ box-sizing: border-box;
+}
+
+.product_category ul{
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.product_category ul li{
+    width: 100%;
+    text-align: center;
+    border: 1px solid #DCDCDC;
+    border-top: 0;
+    margin-left: -1px;
+    padding-top:24px;
+    padding-bottom: 24px;
+}
+
+.product_category ul li:hover{
+    border-bottom: 6px solid #AA0601;
+}
+.product_category ul li a{
+    display: block;
+    color: black;
+    font-size: 32px;
+    font-weight: medium;
+}
+
+@media(max-width:670px){
+    .product_category ul li a{
+        font-size:24px;
+    }
+}
+@media(max-width:550px){
+    .product_category ul li a{
+        font-size:16px;
+    }
+}
+
+/*banner*/
+
+.product_banner{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.banner_container{
+    width: 100%;
+}
+
+.banner_container img{
+    box-sizing: content-box;
+    width: 100%;
+}
+.banner_table{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner_container_table1{
+    display: none;
+}
+
+.banner_container_table2{
+    display: none;
+}
+.banner_container_phone{
+    width: 100%;
+    display: none;
+}
+.banner_table img{
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+}
+.banner_table .banner_container_table1{
+    width: 50%;
+}
+.banner_table .banner_container_table2{
+    width: 50%;
+}
+@media(max-width:800px){
+    .banner_container{
+        display: none;
+    }
+    .banner_container_phone{
+    display: flex;
+    }
+
+}
+
+@media(max-width:730px){
+    .product_category{
+        padding-top: 180px;
+    }
+}
+
+/*products*/
+
+.main_products{
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50.63px;
+    padding-bottom: 80px;
+
+}
+.main_products h1{
+    font-size: 42px;
+    font-weight: 500;
+}
+
+.main_products h2{
+    font-size: 32px;
+    font-weight: 400;
+    padding-bottom: 32px;
+}
+
+
+.main_products .products{
+    justify-content: center;
+    max-width: 1320px;
+    flex-wrap: wrap;
+    padding-left: -12px;
+    padding-right: -12px;
+}
+
+.product_1{
+    flex-direction: column;
+    /* align-items: flex-start;  here you can't add this!!!!!!! otherwise .product_detail_ul won't space-between */    
+    width: 100%;
+    width: 306px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.product_1 img{
+    width: 100%;
+}
+
+
+.product_detail_ul{
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+
+} 
+.product_detail_ul li{
+    margin: 0;
+}
+
+.product_detail_ul a{
+    font-size:24px;
+    font-weight: 500;
+}
+.product_detail_ul span{
+    color:var(--main-red);
+    font-size:24px;
+    font-weight: 500;
+
+}
+
+.products_color {
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+}
+
+.products_color img{
+    width: 24px;
+    height: 24px;
+
+}
+
+
+
+@media(max-width:1300px){
+    .main_products{
+        padding-left: 36px;
+        padding-right: 36px;
+    
+    }
+
+    .products{
+        justify-content: center;
+        align-items: center;
+    }
+    .product_1{
+        width: 30%;
+    }
+}
+
+@media(max-width:1115px){
+    .product_1{
+        width: 50%;
+    }
+}
+
+
+
+@media(max-width:600px){
+    .products{
+        gap: 24px;
+    }
+    .product_1{
+        width: 100%;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .main_products{
+        padding-left: 14px;
+        padding-right: 14px;
+    
+    }
+    .main_products .products{
+        padding-left: 0px;
+        padding-right: 0px;
+}
+    
+}
+
+@media(max-width:500px){
+    .main_products h1{
+        font-size: 24px;
+    }
+    .main_products h2{
+        font-size: 24px;
+    }
+    
+}
+
+/*pagitantion*/
+
+.pagination{
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 80px;
+ 
+}
+
+.pagination ul li{
+    padding:12px 16px;
+    border: 1px solid #555555;
+    margin-left: -1px; /* Offsets the left border to avoid double borders */
+    cursor: pointer; 
+
+}
+.pagination ul li:hover{
+    background-color: #F2F2F2 ;
+}
+
+.pagination ul li a{
+    font-size: 18px;
+    font-weight: 400;
+}
+.pagination ul li:last-child a{
+    font-size: 19px;
+}
+
+.pagination ul li:first-child a{
+    font-size: 19px;
+}

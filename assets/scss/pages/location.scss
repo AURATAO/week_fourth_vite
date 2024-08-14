@@ -1,0 +1,163 @@
+/*headline*/
+
+.content{
+    width: 100%;
+    min-width: 100vph;
+    padding-top: 120px;
+    padding-bottom: 80px;
+    padding-left: 36px;
+    padding-right: 36px;
+}
+
+.location_headline{
+    gap:16px;
+}
+
+.redBar{
+    width: 0px;
+    height: 72px;
+    border: 8px solid var(--main-red);
+    color:var(--main-red);
+}
+
+.location_headline h1 {
+    font-size:48px;
+    font-weight: bold;
+    
+}
+
+/*region select*/
+.regionSelect{
+    padding-top: 33px;
+    padding-bottom: 40px;
+    gap:16px;
+}
+
+.regionSelect label{
+    font-size: 24px;
+}
+
+.regionSelect select{
+    width: 304px;
+    height: 38px;
+    border:1px solid #CED4DA;
+    font-weight: normal;
+    color: #495057
+}
+
+/*locations*/
+.locations_container{
+    max-width: 1296px;
+    margin: 0 auto;
+    text-align: center;
+} /*想要貼齊兩邊！！！？？？*/
+
+.locations{
+    flex-wrap: wrap;
+    row-gap: 48px;
+    margin-left: -12px;
+    margin-right: -12px;
+}
+
+.location1{
+    width: 30%; 
+    border: 1px solid #00000020;
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+.location1 .main_location_pic{
+    max-width: 100%;
+    box-sizing: content-box;
+    
+}
+
+.location1 h3{
+    font-size: 24px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 24px;
+    border-bottom: 1px solid #00000020;
+}
+
+.location1 ul{
+    min-height: 168px;
+}
+
+.location1 ul li{
+    font-size:20px;
+    padding-top: 16px;
+}
+
+.location1 .location_info{
+    align-items: center;
+    gap: 11px;
+    align-items: flex-start;
+    padding-right: 24px;
+    padding-left: 24px;  
+}
+
+.location1 .icon{
+    width: 18px;
+    height: 18px;
+
+}
+
+.location1 h4{
+    width: 100%;
+    background-color: black;
+    color: white;
+    font-size: 19px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    margin-top: 16px;
+    text-align: center;
+}
+
+
+
+@media(max-width:1000px){
+    .locations{
+        margin-left: 0 auto;
+        justify-content: flex-start;
+        gap: 24px;
+    }
+    .location1{
+        width: 45%;
+    }
+}
+
+
+@media(max-width:770px){
+    .content{
+        padding-left: 14px;
+        padding-right: 14px;
+        padding-top: 220px;
+
+    }
+    .locations{
+        margin-left: 0 auto;
+        justify-content: space-between;
+        text-align: center;
+    }
+
+    .location1{
+        width: 100%;
+    }
+
+ 
+}
+
+@media(max-width:476px){
+    .regionSelect{
+        align-items: center;
+    }
+    .regionSelect > label{
+        font-size:16px;
+        
+    }
+
+    .regionSelect select{
+        width: 80%;
+    }
+}

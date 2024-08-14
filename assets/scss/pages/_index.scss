@@ -1,0 +1,613 @@
+.container{
+  width: 100%;
+}
+
+/*banner*/
+
+.home{
+  width: 100%;
+  
+}
+
+.banner{
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  background-image: url('../img/home-header.png');
+  background-repeat: no-repeat;
+  background-position: fixed;
+  background-size: cover;
+
+
+ height: calc(100vh - 80px);
+ min-height: 800px;
+}
+
+.headline{
+  width:100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; /*??? if i miss this line then my a element will be align with the left edge*/
+  text-align:right;
+  margin-left: auto;
+}
+
+
+.headline h1{
+  font-size: 36px;
+  color: var(--main-darkred);
+  font-weight: 400;
+}
+
+.headline h2{
+  font-size: 64px;
+  color: var(--main-darkred);
+  font-weight: 700;
+}
+
+.headline a{
+  width: 104px;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  background-color: var(--main-red);
+  padding: 6px 12px;
+}
+
+@media(max-width:1320px){
+  .headline{
+      padding-right: 37px;
+  }
+
+}
+@media(max-width:800px){
+  .banner{
+      background-image: url('../img/home-header-sm.png');
+  }
+}
+
+@media (max-width:685px){
+  .headline h1{
+      font-size: 16px;
+  }
+
+  .headline h2{
+      font-size: 24px;
+  }
+
+}
+
+/*adventage*/
+
+.adventage{
+  width: 100%;
+  margin: 0 auto;
+  background-color: var(--main-beige);
+}
+
+.adventage > div{
+  flex-direction: column;
+  align-items: center;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  width: 100%;
+  margin: 0 auto;
+}
+.adventage h2{
+  font-size: 48px;
+  color:var(--main-darkred);
+  font-weight: 700;
+  
+}
+
+.adventage_content{
+  max-width: 1320px; /*due to your .adventage_content has pl12px/pr12px so the outside container need to make up 24px + 1296px then it will fit, the effect same as apply gap:24px */
+}
+
+.adventage_1, .adventage_2, .adventage_3, .adventage_4 {
+  width: 25%;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.adventage_1, .adventage_2, .adventage_3, .adventage_4, h3{
+  font-size: 24px;
+  color:var(--main-darkred);
+  font-weight: 700;
+  padding-top: 24px;
+  padding-bottom: 8px;
+}
+.adventage_1, .adventage_2, .adventage_3, .adventage_4, p{
+  font-size: 16px;
+  color:var(--main-darkred);
+
+}
+
+.adventage_content img{
+  width: 83.83px;
+  height: 83.83px;
+}
+
+
+@media(max-width:768px){
+  .adventage_content{
+      flex-wrap: wrap;
+  }
+  .adventage_1, .adventage_2, .adventage_3, .adventage_4 {
+      width: 50%;
+  }
+}
+
+@media(max-width:576px){
+  .adventage h2{
+      font-size: 24px;
+  }
+
+  .adventage_content{
+      padding-left: 14px;
+      padding-right: 14px;
+  }
+  .adventage_1, .adventage_2, .adventage_3, .adventage_4 {
+      width: 100%;
+
+  }
+}
+
+
+
+/*classic category*/
+
+.classic_category{
+  background-color: white;
+  width: 100%;
+  margin: 0;
+  padding-top: 80px;
+  padding-bottom: 80px;
+
+  flex-direction: column;
+  align-items: center;
+}
+
+.classic_category h2{
+  font-size: 48px;
+  font-weight: 700;
+  color:var(--main-darkred)
+}
+
+.categories{
+  gap:24px;
+  padding-top: 48px;
+  justify-content: center;
+  align-items: center;
+}
+
+.categories > div{
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+}
+
+.categories > div > img{
+  width: 100%;/*don't write the pic*/
+  aspect-ratio: 1;
+  padding-bottom: 8px;
+} 
+
+.categories > div > h3{
+  font-size:48px;
+  font-weight: bold;
+  color:var(--main-red);
+}
+
+@media(max-width:992px){
+  .categories{
+      flex-direction: column;
+  }
+
+  .categories{
+      padding-left: 14px;
+      padding-right: 14px;
+      padding-top: 24px;
+  }
+  .categories > div{
+      width: 50%;
+  }
+
+  .categories > div > h3{
+      font-style: italic;
+  }
+}
+
+@media(max-width:576px){
+  .classic_category{
+      padding-top: 40px;
+  }
+  .categories{
+      padding-left: 14px;
+      padding-right: 14px;
+      padding-top: 24px;
+  }
+  .categories > div{
+      width: 100%;
+  }
+  .classic_category h2{
+      font-size:24px;
+  }
+  .categories > div > h3{
+      font-style: italic;
+  }
+}
+
+/*collaboration*/
+
+
+.collaboration{
+  flex-direction: column;
+  align-items: center;
+
+  background-image: url('../img/index-bg-md.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.collaboration > h2{
+  font-size: 48px;
+  font-weight: bold;
+  color: white;
+}
+
+
+.collab_category{
+  justify-content: center;
+  align-items: center;
+
+}
+
+.collab_category .collab_container{
+  box-sizing: content-box;
+  width: 100%;
+  padding-top: 48px;
+  width:50%;
+  
+}
+
+.collab_category > div >img{
+  justify-content: center;
+  align-items: center;
+  object-fit: cover;
+  width:100%;
+  /* max-height: 39%; */
+  aspect-ratio: 3/1;
+  
+}
+
+.collab_category .collab_container h2{
+  font-size: 48px;
+  font-weight: bold;
+  font-style: italic;
+  color: var(--main-red);
+  background-color: white;
+  text-align: center;
+}
+
+@media(max-width:1350px){
+  .collab_category{
+    padding-right: 36px;
+    padding-left: 36px;
+  }
+}
+
+@media(max-width:768px){
+  .collab_category{
+      flex-direction: column;
+  }
+  .collab_category .collab_container{
+      width: 100%;
+  }
+}
+
+@media (max-width:576px){
+  .collaboration > h2{
+      font-size: 24px;
+  }
+
+  .collab_category > div >img{
+      aspect-ratio: 2/1;
+  }
+
+}
+
+/*recommendation*/
+
+.recommendation{
+  flex-direction: column;
+  align-items: center;
+
+  padding-top: 80px;
+  padding-bottom: 80px;
+  
+}
+
+.recommendation h2{
+  font-size: 48px;
+  font-weight: bold;
+  color:var(--main-darkred)
+
+}
+
+.recommendation .list_recommendation{
+  justify-content: center;
+  align-items: center;
+  
+
+  padding-top: 48px;
+  /* gap: 24px; */
+  max-width: 1322px;
+  
+}
+
+.list_recommendation .person_recommendation {
+  flex-direction: column;
+  align-items: center;
+
+  box-sizing: border-box;
+  width: 24%;
+
+  
+  
+  border: 1px solid #DEE2E6;
+  box-shadow: 0px 2px 6px #00000029;
+  border-radius: 4px;
+  padding-bottom: 16px;
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
+.list_recommendation .person_recommendation:hover{
+  box-shadow: 0px 5px 10px #00000050;
+}
+
+.list_recommendation .person_recommendation img{
+  width: 100%;
+  padding-bottom: 16px;
+}
+
+.person_recommendation .recommendation_container{
+  flex-direction: column;
+  justify-content: flex-start;
+  gap:72px; /*if i want to try using marign auto to seperate between content and date insteat of using gap */
+  padding: 0px 16px;
+  
+}
+
+.person_recommendation .recommendation_container .recommendation_content{
+  flex-direction: column;
+  justify-content: flex-start;
+
+  margin-bottom: 0 auto;
+
+}
+
+.person_recommendation .recommendation_container .recommendation_content h4{
+  font-size: 16px;
+  font-weight: bold;
+}
+
+
+.person_recommendation .recommendation_container .recommendation_content > p{
+  font-size: 16px;
+  font-weight: normal;
+  color: #000000;
+
+  margin-top:0 auto;
+  
+}
+
+.person_recommendation .recommendation_container > time{
+  font-size: 14px;
+  color:#707070;
+  font-weight: normal;
+
+  letter-spacing: 0px;
+
+  
+}
+
+@media(max-width:1200px){
+  .person_recommendation .recommendation_container{
+    min-height: 190px;
+  }
+}
+
+@media(max-width:992px){
+
+  .list_recommendation .person_recommendation{
+      width: 40%;
+  }
+  .recommendation h2{
+      font-size:24px
+  }
+  .recommendation .list_recommendation{
+      flex-wrap: wrap;
+      gap:24px
+  }
+  .recommendation{
+      padding-bottom: 40px;
+  }
+}
+
+@media(max-width:576px){
+  .recommendation .list_recommendation{
+      padding-top: 24px;
+  }
+  .list_recommendation .person_recommendation{
+      width: 100%;
+  }
+  .person_recommendation .recommendation_container{
+      width: 100%;
+      gap:96px;
+      padding-left: 16px;
+      padding-right: 16px;
+  }
+}
+
+/*contact us*/
+.contact_us{
+  background-color: var(--main-beige);
+
+  flex-direction: column;
+  align-items:  center;
+  
+  padding-top: 80px;
+  padding-bottom: 80px;
+
+}
+.contact_us h2{
+  font-size: 48px;
+  color:var(--main-darkred);
+  font-weight: bold;
+  padding-bottom: 48px;
+}
+
+.contact_us_container{
+  max-width: 636px;
+  width: 100%;
+  padding: 0 15px;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+  overflow: visible;
+}
+
+
+.contact_us_container p{
+  max-width: 636px;
+  color:black;
+  font-size: 20px;
+  font-weight: 400;
+  
+}
+
+.contact_us_container .contact_us_form{
+  max-width: 636px;
+  width: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+
+}
+
+.contact_us_container .contact_us_form label{
+  font-size: 16px;
+  font-weight: normal;
+
+  margin-top: 16px;
+  margin-bottom:8px ;
+}
+
+.contact_us_container .contact_us_form input{
+  width: 100%;
+  box-sizing: border-box;
+  height: 33px;
+
+  background-color: var(--main-beige);
+  border: 1px solid black;
+}
+
+.contact_us_container .contact_us_form textarea{
+  height: 136px;
+  width: 100%;
+  box-sizing: border-box;
+
+  background-color: var(--main-beige);
+  border: 1px solid black;
+
+
+}
+
+.contact_us_form .checkbox_container{
+  max-width: 636px;
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+}
+
+.contact_us_form .checkbox_container input{
+  position: absolute;
+  opacity: 1;
+  cursor: pointer;
+  height: 24px;
+  width: 24px;
+  border: 2px solid #000000;
+  right:515px;
+  top: -2.5px;
+  left: -1%; /*左邊定位*/
+}
+
+
+.contact_us_form .checkbox_container .checkmark {
+  position: absolute;
+  top: 0;
+  
+  height: 25px;
+  width: 25px;
+  background-color: var(--main-beige);
+  
+}
+
+.button_container{
+  max-width: 636px;
+  width: 100%;
+  padding-left: 110px;
+  padding-right: 110px;
+}
+
+
+.contact_us .button{
+  width: 100%;
+
+  background-color: var(--main-red);
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 48px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+  border: none;
+}
+
+@media(max-width:576px){
+  .contact_us{
+      width: 100%;
+      padding-left: 14px;
+      padding-right: 14px;
+      padding-top: 40px;
+  }
+  .contact_us h2{
+      font-size: 24px;
+      padding-bottom: 24px;
+  }
+  .contact_us_container p{
+      font-size:16px;
+  }
+
+  .contact_us_form .checkbox_container input{
+      font-size:16px; 
+  }
+
+  .button_container{
+      padding:0;
+  }
+}
