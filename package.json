@@ -1,5 +1,5 @@
 {
-  "name": "web-layout-training-vite",
+  "name": "week_fourth_challenge",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -7,11 +7,10 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "deploy": "vite build"
+    "deploy": "vite build && gh-pages -d dist"
   },
   "devDependencies": {
     "ejs": "^3.1.9",
-    "gh-pages": "^6.1.1",
     "vite": "^4.2.0",
     "vite-plugin-ejs": "^1.6.4"
   },
